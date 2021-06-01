@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+
+    <!--🙂 🔥 start javascript-->
+    <script>
+        const name = prompt('What is your name?');
+        const username = 'joshuadodd';
+
+        // if
+        if (name == 'Josh' || name == 'Chris') {
+                alert('Hello!');
+            } else if (name == 'holly'){
+            console.log('this is holly');
+        
+            }else {
+            console.log('not nick');
+        }
+
+        // FOR LOOP 
+        var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+for(let i = 0; i < myArray.length; i++){
+    console.log(myArray[i].name);
+}
+
+/*
+Output:
+    John
+    Jane
+    Martin
+    Katie
+    Louis
+*/
+    // for/of LOOP
+    var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+for (let profile of myArray) {
+    console.log(profile.name)
+}
+
+/*
+Output:
+  John
+  Jane
+  Martin
+  Katie
+  Louis
+*/
+
+    //forEACH()
+    var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+myArray.forEach(function(profile, index, myArr) {
+    console.log(`Index: ${index}, Name: ${profile.name}`);
+});
+
+/*
+Output:
+  Index: 0, Name: John
+  Index: 1, Name: Jane
+  Index: 2, Name: Martin
+  Index: 3, Name: Katie
+  Index: 4, Name: Louis
+*/
+
+
+// Example 2: Standalone function
+var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+myArray.forEach((profile, index, myArr) => this.myfunction(profile, index, myArr));
+
+myfunction = (profile, index, myArr) => {
+    console.log(`Index: ${index}, Name: ${profile.name}`);
+}
+
+/*
+Output:
+  Index: 0, Name: John
+  Index: 1, Name: Jane
+  Index: 2, Name: Martin
+  Index: 3, Name: Katie
+  Index: 4, Name: Louis
+*/
+    //WHILE LOOP
+    var myArray = [
+    {id: 1, name: 'John', age: 12},
+    {id: 2, name: 'Jane', age: 14},
+    {id: 3, name: 'Martin', age: 13},
+    {id: 4, name: 'Katie', age: 17},
+    {id: 5, name: 'Louis', age: 11}
+];
+
+var i = 0;
+while(i < myArray.length) {
+    console.log(myArray[i].name)
+    i++
+}
+
+/*
+Output:
+  John
+  Jane
+  Martin
+  Katie
+  Louis
+*/
+    //PALINDROMES
+    isPalindrome = (string) => {
+  let strLen = Math.floor(string.length / 2);
+  string = string.toLocaleLowerCase();
+
+  for (let i = 0; i < strLen; i++) {
+    if (string[i] !== string[strLen - i - 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+    // PALINDROMES CONT
+function palindromeChecker(text) {
+
+var reversedText = text.toLowerCase()
+    .split('').reverse().join('')
+
+return text === reversedText
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
 </body>
+
 </html>
